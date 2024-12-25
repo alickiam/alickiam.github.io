@@ -14,7 +14,7 @@
 
 .logo {
     object-fit: cover;
-    width: 4rem; 
+    width: 5rem; 
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -25,9 +25,9 @@
 }
 
 .desktopMenuListItem:hover{
-    color:red;
+    color:rgb(109, 141, 235);
     padding-bottom: 0.5rem;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid rgb(109, 141, 235);
 }
 
 .desktopMenuBtn{
