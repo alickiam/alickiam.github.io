@@ -1,1 +1,48 @@
+#works {
+    margin: 0 auto;
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+}
 
+.worksTitle {
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.worksDesc {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.link {
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+    max-width: 50rem;
+    padding: 0 2rem;
+}
+
+.link:hover {
+    color:rgb(109, 141, 235);
+    /*padding-bottom: 0.5rem;
+    border-bottom: 3px solid rgb(109, 141, 235);*/
+}
+
+.workDesc {
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.projImg {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}

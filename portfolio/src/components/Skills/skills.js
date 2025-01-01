@@ -7,13 +7,13 @@ import InterestsImg from '../../assets/interests.png';
 const Skills = () => {
     return (
         <section id='skills'>
-            <span className='skillTitle'>What I do</span>
+            <span className='skillTitle'>About Me</span>
             <span className='skillDescription'>I am a Software Engineering student at the University of Waterloo skilled in both front-end and back-end development. I enjoy the process of creating something new, whether that be a website, game, or something else entirely. </span>
             <div className="skillBars">
                 <div className="skillBar">
                     <img src={SkillsImg} alt = "SkillsImg" className="skillBarImg"></img>
                     <div className="skillBarText">
-                        <h2>Skills</h2>
+                        <h2>Languages</h2>
                         <p>Python, C, C++, SQL, sqlite3, HTML, CSS, Javascript</p>
                     </div>
                 </div>
@@ -28,7 +28,7 @@ const Skills = () => {
                     <img src={InterestsImg} alt = "InterestsImg" className="skillBarImg"></img>
                     <div className="skillBarText">
                         <h2>Interests</h2>
-                        <p></p>
+                        <p>Reading, Working out, Rock climbing</p>
                     </div>
                 </div>
             </div>
