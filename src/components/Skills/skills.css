@@ -1,74 +1,74 @@
 #skills {
-    overflow: hidden;
     width: 100vw;
-    max-width: 65rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    max-width: 100rem;
     margin: 0 auto;
-
+    padding: 5rem 1rem;
+    background: linear-gradient(180deg, rgba(7, 11, 23, 0.95), rgba(15, 23, 42, 0.95));
 }
 
 .skillTitle {
-    font-size: 3rem;
-    font-weight: 600;
-    padding-top: 0rem;
-    margin-bottom: 1.5rem;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #f8fafc;
+    text-align: center;
 }
 
 .skillDescription {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1rem;
-    max-width: 50rem;
-    padding: 0 2rem;
+    max-width: 48rem;
+    margin: 0 auto 2.5rem;
+    color: #cbd5e1;
+    text-align: center;
 }
 
 .skillBars {
-    margin: 1.5rem;
-    width: 100vw;
-    max-width: 80%;
-    text-align: left;
+    width: min(95vw, 76rem);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1.5rem;
 }
 
 .skillBar {
     display: flex;
-    margin: 1rem;
-    padding: 1.5rem 2rem;
-    border-radius: 0.5rem;
-    background: rgb(50, 50, 50);
+    gap: 1.25rem;
+    align-items: flex-start;
+    padding: 1.75rem;
+    border-radius: 1.5rem;
+    background: rgba(148, 163, 184, 0.08);
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.16);
 }
 
 .skillBarImg {
     object-fit: cover;
     height: 3rem;
     width: 3rem;
-    margin-right: 2rem;
+    margin-top: 0.2rem;
+}
+
+.skillBarText>h2 {
+    margin: 0;
+    font-size: 1.05rem;
+    color: #f8fafc;
 }
 
 .skillBarText>p {
-    font-size: 1rem;
-    font-weight: 200;
+    margin: 0.5rem 0 0;
+    font-size: 0.98rem;
+    line-height: 1.75;
+    color: #cbd5e1;
 }
 
-@media screen and (max-width:720px) {
-    .skillBarText>p {
-        font-size: 2vw;
+@media screen and (max-width: 720px) {
+    .skillBar {
+        flex-direction: column;
+        align-items: stretch;
     }
-    
-}
 
-@media screen and (max-width:480px) {
-    .skillBarText>p {
-        font-size: 3vw;
-    }
     .skillBarImg {
-        height: 2.25rem;
-        width: 2.25rem;
+        margin: 0 0 0.75rem 0;
     }
-    .skillBarText>h2 {
-        font-size: 5vw;
-    }
-    
 }

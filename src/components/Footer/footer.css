@@ -1,11 +1,14 @@
 .footer {
     width: 100vw;
-    height: 4rem;
-    background: rgb(40, 40, 40);
+    max-width: 100rem;
+    margin: 0 auto;
+    min-height: 4rem;
+    background: rgba(15, 23, 42, 0.95);
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #94a3b8;
     font-weight: 300;
-    font-size: small;
-    color: grey;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(148, 163, 184, 0.1);
 }
